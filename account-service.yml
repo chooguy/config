@@ -1,16 +1,16 @@
 greetiong: "안녕하세요"
 
 ---
-spring
+spring:
   profiles: stage
 greeting: "스테이징 서버에 오신걸 환영합니다."
 
 ---
-spring
+spring:
   profiles: dev
 greeting: "개발 서버에 오신걸 환영합니다."
 
 ---
-spring
+spring:
   profiles: local
 greeting: "로컬 서버에 오신걸 환영합니다."
