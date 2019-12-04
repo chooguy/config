@@ -16,4 +16,4 @@ spring:
   profiles: local
   
 devguide:
-  greeting: "로컬 서버에 오신걸 환영합니다."
+  greeting: "TEST 로컬 서버에 오신걸 환영합니다."
