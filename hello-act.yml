@@ -2,4 +2,4 @@ server:
   port: 8090
 
 message:
-  act: "hello-act"
+  act: "hello-kds"
