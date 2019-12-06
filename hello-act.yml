@@ -2,7 +2,7 @@ server:
   port: 8090
 
 message:
-  act: "hello-kds"
+  act: "hello-kds-add"
 
 spring:
   rabbitmq:
