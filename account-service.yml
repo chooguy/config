@@ -4,16 +4,16 @@ devguide:
 ---
 spring:
   profiles: stage
-greeting: "스테이징 서버에 오신걸 환영합니다."
+greeting: "stage"
 
 ---
 spring:
   profiles: dev
-greeting: "개발 서버에 오신걸 환영합니다."
+greeting: "dev"
 
 ---
 spring:
   profiles: local
   
 devguide:
-  greeting: "변경 로컬 서버에 오신걸 환영합니다."
+  greeting: "local"
