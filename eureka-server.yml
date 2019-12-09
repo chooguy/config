@@ -1,18 +1,37 @@
-# -- Server Port
-server:
-  port: 8889
-
-spring: 
+#유레카 서버 - 1
+spring:
   application: 
-    name: eureka-server
-
-# -- Eureka
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    serviceUrl:
-#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-      defaultZone: http://localhost:8899/eureka/
-    registerWithEureka: false
-    fetchRegistry: false
+    name: eureka-server1
+eureka: 
+  client: 
+    serviceUrl: 
+      defaultZone: http://localhost:8889/eureka/,http://localhost:8899/eureka/
+#eureka.instance.hostname=localhost
+    registerWithEureka: true
+    fetchRegistry: true
+    
+    
+#유레카 서버 - 2
+spring:
+  application: 
+    name: eureka-server2
+eureka: 
+  client: 
+    serviceUrl: 
+      defaultZone: http://localhost:8889/eureka/,http://localhost:8899/eureka/
+#eureka.instance.hostname=localhost
+    registerWithEureka: true
+    fetchRegistry: true
+    
+    
+#주울
+server:
+  port: 8060
+  
+zuul: 
+  routes: 
+    search-apigateway.serviceId: eurekaclient
+    search-apigateway.path: /api/**
+eureka: 
+  client: 
+    serviceUrl.defaultZone: http://localhost:8889/eureka/,http://localhost
