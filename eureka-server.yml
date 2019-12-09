@@ -33,9 +33,6 @@ eureka:
 spring:
   profiles: dev
 
-server:
-  port: 8060
-  
 zuul: 
   routes: 
     search-apigateway.serviceId: eurekaclient
