@@ -32,6 +32,8 @@ eureka:
 ---
 spring:
   profiles: dev
+  application: 
+    name: zuulapi
 
 zuul: 
   routes: 
